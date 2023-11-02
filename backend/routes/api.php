@@ -20,9 +20,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) 
+{
     return $request->user();
 });
+
+//ruta para logeo
+Route::post('/login', [LogeoController::class,'login']);
+
 
 Route::controller(PersonaController::class)->group(function (){
     Route::get('/persona','index');
