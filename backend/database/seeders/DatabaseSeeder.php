@@ -12,6 +12,24 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $personaSeeder = new PersonaSeeder();
+        $personaSeeder -> run();
+
+        $RolSeeder = new RolSeeder();
+        $RolSeeder -> run();
+
+        $Usuarioseeder = new UsuarioSeeder();
+        $Usuarioseeder -> run();   
+
+        $paginaseeder = new PaginaSeeder();
+        $paginaseeder -> run();    
+        
+        $enlaceseeder = new EnlaceSeeder();
+        $enlaceseeder -> run(); 
+
+        $bitacoraseeder = new BitacoraSeeder();
+        $bitacoraseeder -> run();    
+        
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
