@@ -21,8 +21,6 @@ class PersonaFactory extends Factory
             'segundo_nombre' => fake()-> firstName(),
             'primer_apellido' => fake()->lastName(),
             'segundo_apellido' => fake() ->lastName(),
-            'fecha_creación' => fake()->date(),
-            'fecha_modificación' => fake()->date(),  
         ];
     }
 }

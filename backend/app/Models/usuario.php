@@ -4,19 +4,20 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 
 class usuario extends Model
 {
     use HasFactory;
 
-    public function persona()
+    public function persona(): HasOne
     {
-        return $this->belongsTo(Persona::class,'id_persona');
+        return $this->hasOne(Persona::class,'id_persona');
     }
-    public function rol()
+    public function rol(): HasOne
     {
-        return $this->belongsTo(Rol::class,'id_Rol');
+        return $this->hasOne(Rol::class,'id_Rol');
     }
 
 

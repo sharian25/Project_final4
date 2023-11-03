@@ -14,8 +14,6 @@ return new class extends Migration
         Schema::create('rols', function (Blueprint $table) {
             $table->id();
             $table->integer('rol');
-            $table->date('fecha_creación');
-            $table->date('fecha_modificación');
             $table->string('usuario_creación');
             $table->string('usuario_modificación');
             $table->timestamps();

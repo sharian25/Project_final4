@@ -17,8 +17,6 @@ return new class extends Migration
             $table->string('segundo_nombre');
             $table->string('primer_apellido');
             $table->string('segundo_apellido');
-            $table->string('fecha_creación');
-            $table->string('fecha_modificación');
             $table->timestamps();
         });
     }
