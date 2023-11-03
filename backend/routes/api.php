@@ -71,3 +71,4 @@ Route::controller(BitacoraController::class)->group(function (){
     Route::put('/bitacora{id}','update');
     Route::delete('/bitacora{id}','destroy');
 });
+

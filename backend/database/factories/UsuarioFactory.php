@@ -23,8 +23,8 @@ class UsuarioFactory extends Factory
             'fecha'=> fake()-> date(),
             'fecha_creación'=> fake()-> date(),
             'fecha_modificación'=> fake()-> date(),
-            'usuario_creación'=> fake()->date(),
-            'usuario_modificación'=> fake()->date(),
+            'usuario_creación'=> fake()->username(),
+            'usuario_modificación'=> fake()->username(),
         ];
     }
 }

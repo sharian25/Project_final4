@@ -16,8 +16,8 @@ return new class extends Migration
             $table->integer('rol');
             $table->date('fecha_creación');
             $table->date('fecha_modificación');
-            $table->date('usuario_creación');
-            $table->date('usuario_modificación');
+            $table->string('usuario_creación');
+            $table->string('usuario_modificación');
             $table->timestamps();
         });
     }

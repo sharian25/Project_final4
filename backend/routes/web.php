@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+// Route::view('/login','login');
+
+Route::post('/', function () {
+    $credentials = request ()->only('user','password');
+    if (Auth::attempt($credentials)) ; {
+        return 'estas logeado';
+    }
+    return 'tu logeo falló';
+});
+
+//como hacer que utilice la tabla usuarios
