@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class bitacora extends Model
 {
     use HasFactory;
+
+    public function usuario()
+    {
+        return $this->belongsTo(Usuario::class,'id_usuario');
+    }
 }
