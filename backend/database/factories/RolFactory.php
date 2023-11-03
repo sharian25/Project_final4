@@ -20,8 +20,6 @@ class RolFactory extends Factory
     {
         return [
             'rol'=>random_int(1,3),
-            'fecha_creación'=>fake() -> date(),
-            'fecha_modificación'=>fake()-> date() ,
             'usuario_creación'=>fake()-> username() ,
             'usuario_modificación'=>fake()-> username() ,
         ];

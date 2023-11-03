@@ -21,8 +21,6 @@ class UsuarioFactory extends Factory
             'contraseña'=> fake()-> password(),
             'Habilitado'=> fake()-> boolean(),
             'fecha'=> fake()-> date(),
-            'fecha_creación'=> fake()-> date(),
-            'fecha_modificación'=> fake()-> date(),
             'usuario_creación'=> fake()->username(),
             'usuario_modificación'=> fake()->username(),
         ];
